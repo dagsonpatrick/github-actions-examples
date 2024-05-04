@@ -1,0 +1,10 @@
+name: first-workflow
+run-name: Primeiro Workflow
+on:
+    - push
+jobs:
+    run-shell-commands:
+        runs-on: windows-latest
+        steps:
+            - name: Hello World
+              run: echo "Hello World"
