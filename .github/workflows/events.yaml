@@ -2,11 +2,9 @@ name: events
 run-name: Events
 
 on:
-  pull_request:
-    branches:
-      - "main"
-    paths:
-      - "**.js"
+  - push
+  - pull_request:
+
 
 jobs:
   show-ref-and-sha:
